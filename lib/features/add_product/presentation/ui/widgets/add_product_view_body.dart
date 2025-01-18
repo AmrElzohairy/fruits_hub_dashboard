@@ -101,7 +101,8 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                           image: pickedImage!,
                           isFeatured: isFeatured);
                     } else {
-                      setState(() {
+                      setState(() { 
+                        
                         autovalidateMode = AutovalidateMode.always;
                       });
                     }
