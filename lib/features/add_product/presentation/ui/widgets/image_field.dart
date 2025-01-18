@@ -5,7 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
 class ImageField extends StatefulWidget {
-  const ImageField({super.key, this.onValueChanged});
+  const ImageField({super.key,required this.onValueChanged});
   final ValueChanged<File>? onValueChanged;
 
   @override
