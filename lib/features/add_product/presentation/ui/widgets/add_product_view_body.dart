@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fruits_hub_dashboard/core/widgets/custom_text_form_feild.dart';
 import 'package:fruits_hub_dashboard/features/add_product/presentation/ui/widgets/image_field.dart';
+import 'package:fruits_hub_dashboard/features/add_product/presentation/ui/widgets/terms_an_conditions.dart';
 
 class AddProductViewBody extends StatefulWidget {
   const AddProductViewBody({super.key});
@@ -47,6 +48,12 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                   hintText: "Enter Description",
                   textInputType: TextInputType.text,
                   maxLines: 5,
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                IsFeaturedChecked(
+                  onChanged: (value) {},
                 ),
                 const SizedBox(
                   height: 16,
